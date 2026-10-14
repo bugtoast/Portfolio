@@ -1,0 +1,29 @@
+/*
+  Instrument Serif is a narrow, high-contrast display face. Georgia is roughly
+  30% wider, so on a cold load the `display=swap` fallback paints the giant
+  clamp() headlines too wide and they visibly jump once the webfont arrives.
+  These local-only faces scale Georgia to match Instrument Serif's metrics, so
+  the fallback frame and the swapped frame occupy the same space.
+
+  Override values were measured against Instrument Serif's own metrics in
+  Chromium at 100-142px across every serif string in the app.
+*/
+
+@font-face {
+  font-family: "Instrument Serif Fallback";
+  src: local("Georgia");
+  size-adjust: 76%;
+  ascent-override: 132%;
+  descent-override: 42%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Instrument Serif Fallback";
+  src: local("Georgia Italic");
+  font-style: italic;
+  size-adjust: 78%;
+  ascent-override: 132%;
+  descent-override: 42%;
+  line-gap-override: 0%;
+}
