@@ -163,7 +163,7 @@ export default function ProjectDetail() {
             </p>
 
             <div className="border-t border-black/10 pt-6 mt-8">
-              <div className="eyebrow mb-3.5 text-neutral-500 font-mono">CORE CAPABILITIES</div>
+              <div className="eyebrow mb-3.5 text-neutral-500 font-sans">CORE CAPABILITIES</div>
               <div className="flex flex-wrap gap-2">
                 {project.tools.map((t) => (
                   <span
@@ -228,7 +228,7 @@ export default function ProjectDetail() {
             {/* Key Engineering Features */}
             {project.features && project.features.length > 0 && (
               <div className="border-t border-black/10 pt-6 mt-8">
-                <div className="eyebrow mb-4 text-neutral-500 font-mono">KEY SYSTEM HIGHLIGHTS</div>
+                <div className="eyebrow mb-4 text-neutral-500 font-sans">KEY SYSTEM HIGHLIGHTS</div>
                 <div className="space-y-2.5">
                   {project.features.map((feat, idx) => (
                     <div key={idx} className="flex items-start gap-3">
@@ -244,7 +244,7 @@ export default function ProjectDetail() {
 
             {/* Tech Stack */}
             <div className="border-t border-black/10 pt-6 mt-8">
-              <div className="eyebrow mb-3.5 text-neutral-500 font-mono">TECHNOLOGY STACK</div>
+              <div className="eyebrow mb-3.5 text-neutral-500 font-sans">TECHNOLOGY STACK</div>
               <div className="flex flex-wrap gap-2">
                 {project.tools.map((t) => (
                   <span
@@ -270,7 +270,7 @@ export default function ProjectDetail() {
           <ArrowLeft size={15} className="transition-transform duration-300 group-hover:-translate-x-1" />
           Back to all work
         </Link>
-        <span className="eyebrow text-neutral-400 font-mono">PORTFOLIO — 2026</span>
+        <span className="eyebrow text-neutral-400 font-sans">PORTFOLIO — 2026</span>
       </div>
 
       {/* Full-screen Image Lightbox Modal */}

@@ -180,7 +180,7 @@ export function Skills() {
                     {it.label}
                   </span>
                   <span className="mx-1 flex-1 border-b border-black/10" />
-                  <span className="font-mono text-sm text-neutral-400 group-hover:text-neutral-950 md:text-base">
+                  <span className="font-sans text-sm text-neutral-400 group-hover:text-neutral-950 md:text-base">
                     {String(it.level).padStart(2, "0")}
                   </span>
                 </li>
